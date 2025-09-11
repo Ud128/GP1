@@ -69,7 +69,7 @@ namespace BitLookLite
             StringBuilder sb = new StringBuilder();
 
             for ( int i = offset ; i < maxOffset ; i += bytesPerLine ) {
-                sb.Append( $"{i:X8}  " ); // アドレス
+                sb.Append( $"{i:X8}  " ); // アドレス(Text上のローカル的なアドレス)
 
                 // 16進数部分
                 for ( int j = 0 ; j < bytesPerLine ; j++ ) {
